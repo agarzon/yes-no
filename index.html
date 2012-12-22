@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>YES / NO</title>
+	<style type="text/css">
+		body {
+			margin: 0;
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<audio id="si" src="sounds/Yeah.wav" preload="auto"></audio>
+	<audio id="no" src="sounds/Sad-Trombone.wav" preload="auto"></audio>
+	<div style="text-align:center">
+		<span>
+			<a href="javascript:play_si();"><img src="http://placehold.it/450x600/00ff00/ffffff/&text=SI"></a>
+		</span>
+		<span>
+			<a href="javascript:play_no();"><img src="http://placehold.it/450x600/ff0000/ffffff/&text=NO"></a>
+		</span>
+	</div>
+
+	<script>
+		function play_si() {
+			document.getElementById('si').play();
+		}
+		function play_no() {
+			document.getElementById('no').play();
+		}
+	</script>
+</body>
+</html>
